@@ -8,6 +8,7 @@ function functionsBDincphp(){
         echo "<p>Erreur: " . $e->getMessage();
         die();
     }
+    
 }
 
 
@@ -25,8 +26,20 @@ echo "<option value=$Activite>$Activite</option>";
     } 
 }
 
+function AjoutClasse($classe){
+    $pdo = new PDO("mysql:host=localhost;dbname=journeesportive", 'AdminJourneSportive', 'super');
+    $pdo->exec('SET NAMES utf8');
+    $insertion = $pdo ->exec("INSERT into classe (nomClasse) VALUES ('$classe');");
 
-    
+   
+}
 
 
+function AjoutActivite($activity){
+    $pdo = new PDO("mysql:host=localhost;dbname=journeesportive", 'AdminJourneSportive', 'super');
+    $pdo->exec('SET NAMES utf8');
+    $insertion = $pdo ->exec("INSERT into activite (nomActivite) VALUES ('$activity');");
+
+   
+}
 ?>

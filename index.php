@@ -10,6 +10,7 @@ functionsBDincphp();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../journeeSportive_NikolicSetfan/css/main.css">
     <title>Journée Sportive du CFPT</title>
+    <a href="../JournerSportiveV2/admin.php">Admin</a>
 </head>
 
 <body>
