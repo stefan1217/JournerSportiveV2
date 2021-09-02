@@ -1,3 +1,6 @@
+<?php require_once("./php/inc.php");
+functionsBDincphp();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -22,17 +25,37 @@
         </p>
 
 
-        <p>Premier choix:<input type="text" value="Accrobranche">
+        <p>Premier choix:
+        <select id="choix1">
+            <?php
+            GetActivities();
+            ?>
+        </select>
         </p>
 
-        <p>Deuxieme choix:<input type="text" value="Vélo">
+        <p>Deuxieme choix:
+        <select id="choix2">
+            <?php 
+             GetActivities();
+            ?>
+        </select>
         </p>
 
-        <p>Troisième choix:<input type="text" value="Football">
+        <p>Troisieme choix:
+        <select id="choix3">
+            <?php
+                GetActivities();
+            ?>
+        </select>
         </p>
+
+
         <input type="submit" value="Confirmer">
         <input type="submit" value="Annuler">
     </form>
+    <?php
+
+    ?>
 
 
 </body>
